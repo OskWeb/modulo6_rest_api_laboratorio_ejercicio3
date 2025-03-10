@@ -14,6 +14,7 @@ export const characterCardContent = css`
     flex-direction: column;
   }
 `;
+
 export const cardImage = css`
   width: 150px;
   height: 150px;
@@ -21,4 +22,19 @@ export const cardImage = css`
     width: 200px;
     height: 200px;
   }
+`;
+
+export const link = css`
+  text-decoration: none;
+  background-color: #d7d802;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: min-content;
+`;
+
+export const characterBox = css`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;

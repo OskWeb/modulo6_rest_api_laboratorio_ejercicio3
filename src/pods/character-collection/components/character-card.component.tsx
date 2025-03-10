@@ -15,7 +15,6 @@ import * as classes from './character-card.styles';
 interface Props {
   character: CharacterEntityVm;
   onEdit: (id: string) => void;
-  // onDelete: (id: string) => void;
 }
 
 export const CharacterCard: React.FunctionComponent<Props> = (props) => {
@@ -44,9 +43,6 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
         <IconButton onClick={() => onEdit(`${character.id}`)}>
           <VisibilityIcon />
         </IconButton>
-        {/* <IconButton onClick={() => onDelete(`${character.id}`)}>
-          <DeleteIcon />
-        </IconButton> */}
       </CardActions>
     </Card>
   );

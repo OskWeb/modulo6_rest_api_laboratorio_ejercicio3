@@ -1,7 +1,4 @@
-import {
-  CharacterEntityApi,
-  CharactersCollectionData,
-} from './character-collection.api-model';
+import { CharactersCollectionData } from './character-collection.api-model';
 import { schema } from './graphql/schema';
 
 export const getCharacterCollection =
@@ -21,9 +18,3 @@ export const getCharacterCollection =
       throw Error(response.statusText);
     }
   };
-
-export const deleteCharacter = async (id: string): Promise<boolean> => {
-  // eliminar de la api
-  // characterCollection = characterCollection.filter((h) => h.id !== id);
-  return true;
-};

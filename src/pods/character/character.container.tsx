@@ -12,8 +12,6 @@ export const CharacterContainer: React.FunctionComponent = (props) => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
 
-
-
   const handleLoadCharacter = async () => {
     const apiCharacter = await api.getCharacter(id);
     console.log(apiCharacter.data.character);

@@ -6,6 +6,11 @@ export const root = css`
     margin-top: 2rem;
   }
 `;
+export const titleList = css`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`;
 
 export const list = css`
   display: grid;
